@@ -26,6 +26,9 @@ function App() {
     },
   ]);
 
+  /*
+   * Checks if checkbox is ticked or not and toggles its value
+   */
   const handleIsChecked = (colour) => {
     let newArr = [...colours];
     let allSelected = false;
@@ -51,6 +54,10 @@ function App() {
       handleAllOption(newArr[0]);
     }
   };
+
+  /*
+   * Handles the 'all' option if its checkbox is ticked 
+   */
 
   const handleAllOption = (all) => {
     let newArr = [...colours];
